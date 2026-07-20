@@ -14,12 +14,7 @@ import binascii
 import struct
 import io
 
-try:
-    from Cryptodome.Hash import RIPEMD160
-except ImportError:
-    print("Warning: 'pycryptodome' library not found.")
-    print("Please install it with: pip install pycryptodome")
-    sys.exit(1)
+
 
 class Colors:
     RESET = '\033[0m'
